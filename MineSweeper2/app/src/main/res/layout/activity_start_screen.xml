@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="20dp"
+    android:background="@color/darkblue"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="MINESWEEPER"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:background="@color/darkblue"
+        android:textColor="#f30"
+        android:textSize="42sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:text="Last Score: 0"
+        android:gravity="center"
+        android:textColor="#f30"
+        android:textSize="25sp"
+        android:background="@color/darkblue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Choose Difficulty :"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:background="@color/darkblue"
+        android:textSize="30sp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:textColor="#f30"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/textView2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/lightyellow"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <RadioButton
+            android:id="@+id/easyRadio"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:text="Easy"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/mediumRadio"
+            android:text="Medium"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/hardRadio"
+            android:text="Hard"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <Button
+        android:onClick="startGame"
+        android:background="@drawable/bg_btn_add_id"
+        android:text="START"
+        android:textColor="#fff"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:textSize="40sp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/startButton" />
+
+
+
+
+        />
+
+</LinearLayout>
